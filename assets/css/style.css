@@ -1,104 +1,165 @@
-/*Universal Selector*/
 * {
   margin: 0;
   padding: 0;
-}
-
-/*Element Selectors */
-body {
-  position: relative;
-  font-family: "Helvitica", sans-serif;
-  font-size: 20px;
-  background-color: #fdf8f5;
-  color: #4f4846;
-}
-h1,
-h2 {
-  margin: 20px;
-}
-
-main {
-  padding: 60px 0;
-}
-
-li {
-  display: inline;
-  padding: 0px 20px;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: #fdf8f5;
-}
-
-header,
-footer {
-  height: 70px;
-  width: 100%;
-  line-height: 60px;
-  background-color: #4287f5;
-}
-
-header {
-  position: fixed;
-  box-shadow: 2px 4px 8px #888888;
-}
-
-footer {
-  position: absolute;
-  margin-top: 0;
-  bottom: 0;
-  box-shadow: 2px 4px 8px #888888;
-}
-
-figure {
-  margin-bottom: 40px;
-}
-
-img {
-  display: block;
-  margin: 20px auto;
-}
-
-form {
-  /* Center the form on the page */
-  margin: 30px auto;
-  width: 500px;
-  padding: 10px;
-  border: 5px solid #2f5ca3;
-  border-radius: 20px;
-}
-
-label {
-  display: inline-block;
-  width: 100px;
-}
-
-input,
-textarea {
   box-sizing: border-box;
-  width: 300px;
-  border: 1px solid #4f4846;
+  font-size: 16px;
+  line-height: 1.25;
+  /* color: #123178; */
+  font-family: Lucida, sans-serif;
 }
-
-textarea {
-  vertical-align: top;
-  height: 60px;
+h1 {
+  font-size: 22px;
 }
-
-button {
-  height: 40px;
-  width: 120px;
-  background-color: #4f4846;
-  color: #fdf8f5;
+h2 {
+  font-size: 20px;
 }
-
-/* Class Selectors */
-.text-center {
-  text-align: center;
+h3 {
+  font-size: 16px;
 }
-
-.text-right {
-  text-align: right;
+body {
+  width: 100%;
+  background-color: white;
+}
+.header nav {
+  background-color: #4260f5;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 2px 4px 8px #888888;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: start;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.header nav a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  display: flex;
+  /* height: 500px; */
+  background-color: white;
+}
+.left {
+  width: 65%;
+  background-color: white;
+  color: #123178;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #123178;
+  box-shadow: 2px 4px 8px #888888;
+  padding: 15px 20px;
+  margin-left: 1%;
+}
+.left img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  /* text-justify: ; */
+}
+.left-top h1 {
+  font-size: larger 22px;
+}
+.left-top h2 {
+  font-size: larger 18px;
+  padding-top: 1em;
+}
+.right {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid groove;
+  padding: 5px 20px;
+  box-shadow: 2px 4px 8px #888888;
+  color: #123178;
+}
+.pictext {
+  color: #123178;
+  font-weight: bolder;
+}
+.right img {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+.box-pic img {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  width: 30%;
+}
+.box-pic h2 {
+  padding-top: 2em;
+}
+.skills-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+.skills-images img {
+  margin-left: 10%;
+  margin-bottom: 0px;
+  width: 20%;
+  padding-right: 5%;
+  font-weight: bold;
+}
+.horiseon {
+  background-color: white;
+  padding: 20px;
+}
+.horiseon:hover {
+  transform: scale(1.2);
+}
+.horiseon a {
+  text-decoration: none;
+  color: #123178;
+  display: block;
+}
+.horiseon img {
+  display: block;
+  width: 100%;
+}
+.projects-container {
+  background-color: white;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+.Projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 280px;
+}
+.Projects div {
+  background-color: white;
+}
+.Projects img {
+  display: block;
+  width: 100%;
+  padding-top: 1%;
+}
+.Projects img:hover {
+  transform: scale(1.2);
+}
+footer nav {
+  background-color: white;
+}
+footer ul {
+  padding: 20px 0;
+}
+@media screen and (max-width: 800px) {
+  .Projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .Projects {
+    width: 100%;
+  }
+  .Projects {
+    display: block;
+    width: 100%;
+  }
 }
