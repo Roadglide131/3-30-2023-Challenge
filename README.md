@@ -31,5 +31,4 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-
-![laptop](./assets/images/laptop.png)
+![screenshot](./assets/images/laptop.png)
